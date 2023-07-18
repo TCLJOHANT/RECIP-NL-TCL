@@ -1,0 +1,15 @@
+$fuente_de_body:"Inter", sans-serif; //var en sass
+
+:root {
+    --body-font: #{$fuente_de_body}; //interpolacion de variable
+    --color-resaltante:#ff7551;
+    --rojo1:rgb(252, 4, 4);
+    --rojo2:#ff4747;
+    --rojo3: #dc3545; 
+    --theme-bg: #1f1d2b;
+    --body-color: #808191;
+    --button-bg: #353340;
+    --border-color: rgb(128 129 145 / 24%);
+    --video-bg: #252936;
+    --delay: 0s;
+   }

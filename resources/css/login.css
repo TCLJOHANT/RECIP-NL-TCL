@@ -1,0 +1,47 @@
+.superposicion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9); /* Color de fondo semi-transparente */
+  }
+ .container-form { position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;   justify-content: space-around;  transition:  all .5s ease-out;
+    background-color: #fff;  color: #000;
+    z-index: 9999; border-radius: 20px; margin: 0px 0;}
+
+.formulario { width: 400px; padding: 1rem; text-align: center;}
+.salir{
+    position: absolute;
+    right:5%;
+    font-size: 30px;
+    color: rgb(102, 102, 102)
+}
+.salir:hover{
+    color: #000;
+}
+.formulario__logo{width: 35%; border-radius: 50%;}
+
+.create-account { padding: 0.3rem 0 1rem 0; font-size: 1.7rem;}
+
+.formulario__iconos {width: 200px; display: flex; justify-content: space-around; margin: auto;}
+.iconos__red-social{
+    width: 23%;  background-color: aqua;   border-radius: 50px;
+}
+.iconos__red-social img{width: 100%; height: 100%;}
+.formulario__input{ border: 1 px solid black;}
+
+.cuenta-gratis {  padding: 1.2rem 0;}
+#cuenta_link{ color: #000; text-decoration: none;}
+
+.formulario input { width: 70%;  display: block;  margin: auto; border-radius: 20px;
+    margin-bottom: 2rem;   background-color: transparent;   
+    border: rgba(105, 96, 96 ) thin solid;  text-align: center; outline: none;   padding: .5rem 0;
+    font-size: .9rem; color: rgb(105, 96, 96);}
+
+.formulario input[type="button"] { width: 50%; margin: auto;  border: none;
+    padding: .8rem; border-radius: 2rem;  background-color: var(--rojo2);  font-weight: 600; margin-top: 1.5rem;
+    font-size: .8rem; cursor: pointer;  color: #FFF;}
+

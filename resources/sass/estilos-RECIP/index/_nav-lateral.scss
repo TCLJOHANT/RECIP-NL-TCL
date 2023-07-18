@@ -1,0 +1,110 @@
+.nav-lateral {
+      // width: 200px; origin
+
+      width: 15%;
+      min-height: 100%; 
+      padding: 2%; 
+      display: flex; 
+      flex-grow: 0;
+      flex-direction: column; 
+      flex-shrink: 0; 
+      transition-duration: 0.2s;
+      overflow-y: auto; 
+      overflow-x: hidden;
+      .menu-movil{
+        display: none;
+      }
+    .logo{ 
+        &-expandido { 
+          align-self: center;
+            text-decoration: none;  
+            top: 0;
+            & .logo_img{
+              width:75% ;  
+              height: 75%; 
+
+              img{object-fit: cover; 
+                border-radius: 50%;}
+            }
+            &:before { 
+                    content: "";
+                    position:absolute; 
+                    top: -30px;
+                    left: 0; 
+                    background: var(--theme-bg);
+                    width: 200px; 
+                    height: 70px; 
+                    z-index: -1;
+            }
+        }
+    }
+       
+   
+    &-link {
+      &:nth-child(2n + 1) {
+        svg {   background: #ff7551;}
+      }
+      &:nth-child(2n) {
+        svg {background: #32a7e2;}
+      }
+      &:nth-child(2n + 3) {
+        svg { background: #6c5ecf;}
+      }
+       &:hover, &.is-active { 
+        color: #ff4747;  
+        font-weight: 600;
+    
+         }
+    }
+    @media screen and (max-width: 930px) {
+      display: none;
+      .menu-movil{
+        display: flex;
+        position: absolute;
+        font-size: 30px;
+      }
+    }
+   }
+   
+    .menu-lateral { 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      a { 
+        display: flex;  
+        font-size: 1vw;
+        font-weight: 600;
+        align-items: center;  
+        text-decoration: none;
+        color: var(--body-color);
+        margin-top: 17%;
+      }
+      svg { 
+         width: 26%; 
+         padding: 5%;  
+         border-radius: 30%;
+         background-color: var(--button-bg); 
+         flex-shrink: 0;  
+         margin-right: 10%;
+        color: #fff; 
+      }
+   }
+   
+   .titulo-lateral {
+     font-size: 1vw;
+     letter-spacing: 0.07em;
+     margin-bottom: 15%;}
+   
+   .submenu{
+     border-bottom: .150em solid var(--body-color); 
+     padding: 13% 0;
+     width: 100%;
+     margin-bottom: 5%;
+     }
+
+     @media screen and (max-width: 930px) {
+      .menu-movil{
+        display: flex;
+        font-size: 30px;
+      }
+     }
