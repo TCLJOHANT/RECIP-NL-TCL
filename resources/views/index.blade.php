@@ -45,7 +45,7 @@
                         </div>
                         <div class="descubrir-carta animacion" style="--delay: .2s">
                             <div class="">
-                               <button>Publicar receta</button>
+                               <a href="{{route('receta.create')}}">publicar receta</a>
                             </div>
                         </div>
     

@@ -1,3 +1,5 @@
+php artisan make:model Receta -mcr = model + controller + migration  
+  
     //SASS PREPOCESADOR CSS\\
 npm init -y: iniciar np en proyecto
 npm install sass --save-dev : intalar sass
@@ -7,3 +9,11 @@ sass --watch resources/sass:public/css  OBSERVE TODOS LOS CAMBIR DE ARCHIVOS SAS
  SASS LUEGO SE COMPILEN EN CARPETA QUE LAMAREMOS CSS
 
  CONTROL + C EN TERMINAL: PARA PARAR LA OBSERVACION DE TERMINAL EN CARPETA SASS
+
+
+//al clonar repositorio
+    //instalar composer
+        composer install (necesita de extension=curl(php --ini) y de biblioteca curl (php -m | grep curl))
+        hacer el .env a partir del example
+    //generar llave y hacer migraciiones
+        php artisan key:generate

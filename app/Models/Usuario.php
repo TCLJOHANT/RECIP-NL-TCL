@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash; //lo usè con el objetivo de encriptar cont
 class Usuario extends Model
 {
     use HasFactory;
+    //Por ejemplo, si tienes un formulario de actualización de contraseña en tu aplicación y el usuario ingresa una nueva contraseña, puedes utilizar este método para asegurarte de que la contraseña se almacene como un hash en la base de datos. 
     public function setContraseñaAttribute($value)
     {
         // $this->attributes['contraseña'] = Hash::make($value);
@@ -24,6 +25,11 @@ class Usuario extends Model
         }
 
         return parent::create($attributes);
+    }
+    //relación "hasMany" (tiene muchos) entre la clase Usuario y la clase Receta, indicando que usuario puede tener muchas recetas.
+        public function recetas()
+    {
+        return $this->hasMany(Receta::class);
     }
 
 
